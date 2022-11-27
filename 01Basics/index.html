@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+</html><!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaScript Form Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+	</head>
+	<body onload=getdropdownVals()>       
+		<div class="container">
+            <div id="error"></div>
+   			<form action="https://frontend-take-home.fetchrewards.com/form" method = 'POST' id="signup">
+				<h1>Sign Up</h1>
+					<input type="text" id="fname" name="name" placeholder="Enter your fullname" required  />
+					<input type="text" id="email" name="email" placeholder="Enter your email address" required  />
+    				<input type="password" id="password" name="password" placeholder="Enter your password" required minlength="2" maxlength="8" />
+    				<select name="occupation" id="occupation" name="occupation" placeholder= "State" required >
+                    </select> 
+             		<select name="state" id="state" name="state" required >
+                    </select>
+					<button type="submit" class="full">Submit</button>
+			</form>
+		</div>
+		<script 
+            src="script.js">
+        </script>
+	</body>
+</html>
